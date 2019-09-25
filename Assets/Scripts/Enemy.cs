@@ -2,14 +2,19 @@
 
 public class Enemy : MonoBehaviour
 {
+
+    [Header("Health")]
     [SerializeField] int health = 500;
     [SerializeField] float shootCounter;
     [SerializeField] float minTimeBetweenShoot = 0.2f;
     [SerializeField] float maxTimeBetweenShoot = 3f;
-    [SerializeField] float laserSpeed = 5f;
-    [SerializeField] int scoreValue = 200;
 
+    [Header("Laser")]
     [SerializeField] GameObject enemeyLaser;
+    [SerializeField] int scoreValue = 200;
+    [SerializeField] float laserSpeed = 5f;
+
+    
     [SerializeField] GameObject deathVFX;
     [SerializeField] float durationOfExplosion = 1f;
 

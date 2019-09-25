@@ -26,15 +26,12 @@ public class Player : MonoBehaviour
 
     Coroutine firingCoroutine;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         Camera camera = Camera.main;
         SetUpBoundaries(camera);
     }
 
-    // Update is called once per frame
     void Update()
     {
         Move();
